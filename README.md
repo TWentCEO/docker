@@ -100,3 +100,29 @@ CMD ["echo","Hello Docker"]
 ```
 cat Dockerfile
 ```
+
+# 도커 빌드
+```
+$ docker build -t 이미지 이름:버전 경로
+```
+
+# 도커 이미지 찾기
+```
+docker images | grep my
+```
+* grep 옵션 : 앞에 명령어의 결과물 중에서 grep 뒤에 문자열이 있는 것을 찾아줌
+
+도커 레지스트리
+----------------
+```
+$ docker run -d -p 5000:5000 --name registry registry
+```
+* pull rate limit 오류 시
+```
+$ docker login
+```
+
+```
+$ docker push [OPTION] NAME:[TAG]
+```
+*레지스트리에 생성한 이미지를 업로드
