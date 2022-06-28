@@ -27,7 +27,14 @@ $ docker pull ubuntu:18.04
 ## Docker logs
 
 ## Docker stop
-
+* 실행 중인 도커 컨테이너를 중단시키는 커맨드
+```shell
+$ docker stop
+```
+#### ex)
+```shell
+$ docker stop test1
+```
 ## Docker rm
 * 도커 컨테이너를 삭제하는 커맨드
 ```shell
@@ -49,3 +56,5 @@ $ docker images
 $ docker rmi busybox
 ```
 
+표준형 도커 만들기
+------------------
