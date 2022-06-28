@@ -17,15 +17,37 @@ $ docker pull ubuntu:18.04
      * docker login 을 통해서 특정 repository 를 바라보도록 한 뒤, docker pull 을 수행하는 형태로 사용합니다.
    
 ## Docker images
-
+* 로컬에 존재하는 docker image 리스트 출력
+```
+$ docker images
+```
 ## Docker ps
-
+* 현재 실행중인 도커 컨테이너 출력
+```
+$ docker ps
+```
 ## Docker run
-
+* 도커 컨테이너를 실행시키는 커맨드
+```
+$ docker run -it --name test1 ubuntu:18.04 /bin/bash
+```
+ * -it : -i 옵션 + -t 옵션
+   * container를 실행시킴과 동시에 interactive한 terminal로 접속시켜주는 옵션
+ * --name : 컨테이너 id 대신 이름 지정
+ * /bin/bash : 컨테이너를 실행시킴과 동시에 실행할 커맨드로 bash 터미널을 사용
 ## Docker exec
+* Docker 컨테이너 내부에서 명령을 내리거나, 내부로 접속하는 커맨드
+```
+$ docker exec -it test1 /bin/bash
+```
 
 ## Docker logs
-
+* 도커 컨테이너의 log를 확인하는 커맨드
+```
+$ docker logs test1
+$ docker logs test1 -f
+```
+ * -f 옵션 : 실시간으로 watch 하며 출력 
 ## Docker stop
 * 실행 중인 도커 컨테이너를 중단시키는 커맨드
 ```shell
@@ -71,4 +93,8 @@ FROM ubuntu:18.04
 RUN apt-get update
 
 CMD ["echo","Hello Docker"]
+```
+* cat 명령어를 이용하여 저장한 파일 보기
+```
+cat Dockerfile
 ```
