@@ -56,5 +56,19 @@ $ docker images
 $ docker rmi busybox
 ```
 
+
+
 표준형 도커 만들기
 ------------------
+* Dockerfile 파일 생성하고 편집기 이동
+```
+vi Dockerfile
+```
+* vi 편집기에서 명령어 입력
+```
+FROM ubuntu:18.04
+
+RUN apt-get update
+
+CMD ["echo","Hello Docker"]
+```
