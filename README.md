@@ -1,7 +1,8 @@
 Docker
 =============
 
-# 기본적인 명령어
+기본적인 명령어
+-------------
 ## Docker pull
 * docker image repository 부터 Docker image 를 가져오는 커맨드입니다.
 ```shell
