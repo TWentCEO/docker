@@ -16,5 +16,35 @@ $ docker pull ubuntu:18.04
      * docker login 을 통해서 특정 repository 를 바라보도록 한 뒤, docker pull 을 수행하는 형태로 사용합니다.
    
 ## Docker images
+
 ## Docker ps
+
 ## Docker run
+
+## Docker exec
+
+## Docker logs
+
+## Docker stop
+
+## Docker rm
+* 도커 컨테이너를 삭제하는 커맨드
+```shell
+$ docker rm --help
+```
+#### ex)
+```shell
+$ docker rm test1
+$ docker rm test2
+```
+## Docker rmi
+* 도커 이미지를 삭제하는 커맨드
+```
+$ docker rmi --help
+```
+#### ex)
+```shell
+$ docker images 
+$ docker rmi busybox
+```
+
