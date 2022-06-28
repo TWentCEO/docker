@@ -78,7 +78,7 @@ $ docker images
 $ docker rmi busybox
 ```
 
-
+* * * 
 
 표준형 도커 만들기
 ------------------
