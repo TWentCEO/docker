@@ -15,6 +15,8 @@ Docker
 
 ## VM과 Container의 차이점
 
+![Container_VS_VM](https://user-images.githubusercontent.com/62507896/177144702-e0b8747f-9e81-46b4-9405-e043cecce67e.png)
+
 VM(Virtual Machine)은 무거운 운영체제를 포함하고 있기 떄문에 많은 자원을 차지함. 
 
 Container는 VM의 경량화된 버전이라고 할 수 있다. HOST OS에서 Container Engine(Ex. Docker)만 설치하면 여러개의 어플리케이션을 고립된 환경에서 구동할 수 있게해줌. 즉 운영체제를 포함하지 않아 자원의 낭비가 없음.
