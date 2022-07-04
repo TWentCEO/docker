@@ -13,9 +13,13 @@ Docker
 
 ![Docker Architectuer](https://user-images.githubusercontent.com/62507896/177143029-13b0acbe-5d00-45ab-944f-2d3a8496420c.png)
 
+출처 : https://docs.docker.com/get-started/overview/
+
 ## VM과 Container의 차이점
 
 ![Container_VS_VM](https://user-images.githubusercontent.com/62507896/177144702-e0b8747f-9e81-46b4-9405-e043cecce67e.png)
+
+출처 : https://tech.weperson.com/wedev/devops/docker/#docker%E1%84%85%E1%85%A1%E1%86%AB
 
 VM(Virtual Machine)은 무거운 운영체제를 포함하고 있기 떄문에 많은 자원을 차지함. 
 
