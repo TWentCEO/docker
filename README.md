@@ -9,7 +9,9 @@ Docker
 
 * 컨테이너안에 Appliocation(코드), System Tools(환경), Dependencies를 하나로 묶어 다른 서버나 컴퓨터에 배포하여 안정성을 갖추어 실행할 수 있게 해주는 플랫폼
 * 예를들어 어떠한 라이브러리의 버전이 맞지않아 실행할 수 없게 되는 상황을 해결해주기 위한 기술
+# 2. Docker Architectuer
 
+![Docker Architectuer](https://user-images.githubusercontent.com/62507896/177143029-13b0acbe-5d00-45ab-944f-2d3a8496420c.png)
 
 ## VM과 Container의 차이점
 
