@@ -174,7 +174,6 @@ Kubernetes
 
 ![kubernetes_story](https://user-images.githubusercontent.com/62507896/177145786-1653f75f-d731-4fa0-872b-f7c8f323d07c.png)
 
-출처 :https://kubernetes.io/ko/docs/concepts/overview/what-is-kubernetes/
 1. 전통적인 배포 시대 : 초기 조직은 애플리케이션을 물리 서버를 통해 실행했다. 많은 애플리케이션이 사용되면 성능도 떨어지고 서버를 유지하기위해 많은 비용이 들었다.
 2.  가상화된 배포 시대 : 단일 물리 서버의 CPU에 여러 Virtual Machine을 실행할 수 있게 한다. VM간에 애플리케이션을 격리하고 정보를 다른 애플리케이션에서 자유롭게 엑세스 할 수 없으므로, 일정 수준 보안성을 제공할 수 있다.
 3.  컨테이너 개발 시대 : VM과 유사하지만 격리 속성을 완화하여 애플리케이션간에 운영체제를 공유한다. 그렇기 때문에 VM보다 장점이 많다.
@@ -209,7 +208,6 @@ Kubernetes
 
     * 쿠버네티스를 사용하면 암호, OAuth 토큰 및 SSH키와 같은 중요한 정보를 저장하고 관리 할 수 있음.
     * 컨테이너 이미지를 재구성하지 않고 스택 구성에 시크릿을 노출하지 않고도 시크릿 및 애플리케이션 구성을 배포 및 업데이트 할 수 있음.
-
 
 
 # 2. Kubenetes 활용
@@ -804,7 +802,7 @@ curl -X GET $(minikube ip):<PORT>
 # 이렇게 서비스를 통해서 클러스터 외부에서도 정상적으로 pod 에 접속할 수 있는 것을 확인합니다.
 ```
 
-- *** Service 의 Type 이란?**
+* ***Service 의 Type 이란?***
     - **NodePort** 라는 type 을 사용했기 때문에, minikube 라는 kubernetes cluster 내부에 배포된 서비스에 클러스터 외부에서 접근할 수 있었습니다.
         - 접근하는 IP 는 pod 이 떠있는 노드(머신)의 IP 를 사용하고, Port 는 할당받은 Port 를 사용합니다.
     - **LoadBalancer** 라는 type 을 사용해도, 마찬가지로 클러스터 외부에서 접근할 수 있지만, LoadBalancer 를 사용하기 위해서는 LoadBalancing 역할을 하는 모듈이 추가적으로 필요합니다.
